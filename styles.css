@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Staatliches&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+header nav{
+    background-color: hsl(191, 33%, 97%);
+    font-family: "Staatliches", sans-serif;
+    display: flex;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}
+header nav ul{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    margin: .5em;
+}
+header nav ul li{
+    list-style-type: none;
+    padding: 0 1em;
+}
+header nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+main{
+    background-color: hsl(191, 33%, 97%);
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+
+}
+.welcome-section{
+    padding-top: 10em;
+    margin-top: -4em;
+    height: 100vh;
+}
+.profile-image{
+    padding: 3em;
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+}
+h1{
+    font-family: "Staatliches", sans-serif;
+    font-size: 2em;
+    padding: 0.5em;
+}
+.projects{
+    padding-top: 4em;
+    margin-top: -4em;
+}
+.project-header{
+    font-family: "Staatliches", sans-serif;
+    margin-top: 4em;
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    margin-top: 1em;
+    padding-bottom: 4em;
+}
+.project-grid .project-tile{
+    padding: 1em 1em;
+    background-color: hsl(189, 78%, 96%);
+    border-radius: 1em;
+}
+.project-grid .project-tile:hover{
+    box-shadow: 0 0.5em 1em hsl(187, 4%, 44%);
+}
+.project-grid .project-tile .project-name h3{
+    padding: 0.5em 1em 0 1em;
+    font-family: "Staatliches", sans-serif;
+}
+
+.project-grid .project-tile .project-description p{
+    padding: 0.5em 1em;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.project-grid .project-tile .project-image img{
+    width: 100%;
+    height: 80%;
+    
+}
+footer{
+    background-color: hsl(191, 33%, 97%);
+    text-align: center;
+    padding-top: 10em;
+    margin-top: -10em;
+    padding-bottom: 15em;
+    font-family: "Montserrat", sans-serif;
+}
+
+.profile-link h3{
+    font-family: "Staatliches", sans-serif;
+    padding-top: 3em;
+}
+
+.profile-link p{
+    padding: 1em 0;
+    width: 50%;
+    margin: auto;
+}
+.profile-link img{
+    padding: 0.5em 0.5em;
+}
+
+@media (max-width: 1068px){
+    .project-grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .project-grid .project-tile .project-description p{
+        display: none;
+    }
+}
+
+@media (max-width:600px){
+    .project-grid{
+        grid-template-columns: 1fr;
+    }
+}
